@@ -23,9 +23,8 @@ const addNewTask = () => {
 		createToolsArea()
 		ulList.append(newTask)
 
-
 		todoInput.value = ''
-        errorInfo.textContent = ''
+		errorInfo.textContent = ''
 	} else {
 		errorInfo.textContent = 'Write a task!'
 	}
@@ -39,18 +38,16 @@ const createToolsArea = () => {
 	const completeBtn = document.createElement('button')
 	completeBtn.classList.add('complete')
 	completeBtn.innerHTML = '<i class="fas fa-check"></i>'
-	
+
 	const editBtn = document.createElement('button')
 	editBtn.classList.add('edit')
 	editBtn.textContent = 'EDIT'
-	
+
 	const deleteBtn = document.createElement('button')
 	deleteBtn.classList.add('delete')
 	deleteBtn.innerHTML = '<i class="fas fa-times"></i>'
 
 	toolsPanel.append(completeBtn, editBtn, deleteBtn)
 }
-
-
 
 document.addEventListener('DOMContentLoaded', main)
