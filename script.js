@@ -33,6 +33,7 @@ const addNewTask = () => {
 const createToolsArea = () => {
 	const toolsPanel = document.createElement('div')
 	toolsPanel.classList.add('tools')
+
 	newTask.append(toolsPanel)
 
 	const completeBtn = document.createElement('button')
